@@ -1,0 +1,52 @@
+body{
+    background: #070841;
+    margin-right: 30px;
+}
+.game{
+    width: 600px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    font-weight: 500;
+    column-gap: 10px;
+    transform: translateY(15%);
+}
+.game .title{
+    background: rgb(5, 7, 112);
+    padding: 5px 0;
+    margin: 5px 0;
+    grid-column: 1/-1;
+}
+.game .title span{
+    color: rgb(7, 145, 126);
+}
+.game .square{
+    width: 200px;
+    height: 140px;
+    background: rgb(34, 49, 255);
+    font-size: 50px;
+}
+.game .square:hover{
+    background: #000;
+    cursor: pointer;
+}
+@media (max-width:900px) {
+    .game{
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        row-gap: 10px;
+        column-gap: 10px;
+        transform: translateY(20%);
+    }
+    .game .square{
+        width: 100px;
+        height: 140px;
+        background: rgb(34, 49, 255);
+        font-size: 50px;
+    }
+}
